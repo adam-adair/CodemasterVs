@@ -1,0 +1,105 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: 'Arial';
+  overflow: hidden;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+#app > * {
+  margin: 1em;
+  color: 'black';
+}
+
+.logo {
+  width: 175px;
+  max-width: 175px;
+}
+
+.headline {
+  font-size: xx-large;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+}
+
+.studio {
+  color: 'black';
+  bottom: 0;
+}
+
+#web-footer {
+  margin-top: auto;
+}
+
+#web-win-message {
+  color: white;
+  word-wrap: break-word;
+}
+
+/* just app store logos on homepage displays as column */
+.links:not(#banner > .links):not(#callToAction .links) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 320px) {
+  #coming-soon {
+    font-size: 20px;
+  }
+  #web-footer-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dot {
+    visibility: hidden;
+  }
+}
+
+/* for very small screen widths e.g. iPhone SE */
+@media only screen and (min-width: 321px) and (max-width: 560px) {
+  #web-footer-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dot {
+    visibility: hidden;
+  }
+}
+
+/* for very small screen heights e.g. iPhone SE */
+@media only screen and (max-height: 650px) {
+  .logo {
+    width: 100px;
+  }
+  #coming-soon {
+    font-size: 20px;
+    margin: 0px;
+  }
+  #callToAction-text {
+    font-size: 15px;
+  }
+  #web-win-message {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-height: 823px) {
+  #callToAction .logo {
+    width: 100px;
+  }
+}

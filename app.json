@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "CodemasterVs",
+    "slug": "CodemasterVs",
+    "scheme": "codemastervs",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-1940265691596251~4652253422"
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aar2222.codemastervs",
+      "buildNumber": "8"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-1940265691596251~3370304800"
+      },
+      "googleServicesFile": "./google-services.json",
+      "package": "com.aar2222.codemastervs",
+      "versionCode": 8
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "This identifier will be used to deliver personalized ads to you."
+        }
+      ]
+    ]
+  }
+}
